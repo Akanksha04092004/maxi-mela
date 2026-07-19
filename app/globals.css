@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+body {
+  background-color: #f7f0e1;
+  color: #241a14;
+}
+
+/* -----------------------------------------------------------
+   Signature motif: a hand-drawn "garland" thread rule, echoing
+   the marigold/leaf sprigs flanking the logo's wordmark. Used
+   as section dividers instead of a generic straight <hr>.
+------------------------------------------------------------ */
+.garland-rule {
+  position: relative;
+  height: 28px;
+  width: 100%;
+  background-image: radial-gradient(
+      circle at 6px 14px,
+      theme("colors.gold.DEFAULT") 0 3px,
+      transparent 3.5px
+    ),
+    radial-gradient(
+      circle at 26px 6px,
+      theme("colors.maroon.DEFAULT") 0 2.5px,
+      transparent 3px
+    ),
+    radial-gradient(
+      circle at 46px 20px,
+      theme("colors.leaf.DEFAULT") 0 2.5px,
+      transparent 3px
+    );
+  background-repeat: repeat-x;
+  background-size: 60px 28px;
+  opacity: 0.55;
+}
+
+/* Focus visibility */
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid theme("colors.gold.deep");
+  outline-offset: 3px;
+}
+
+/* Custom scrollbar accents for the horizontal timeline rail */
+.rail-scroll::-webkit-scrollbar {
+  height: 8px;
+}
+.rail-scroll::-webkit-scrollbar-thumb {
+  background: theme("colors.maroon.DEFAULT");
+  border-radius: 999px;
+}
+.rail-scroll::-webkit-scrollbar-track {
+  background: theme("colors.cream.dark");
+}
