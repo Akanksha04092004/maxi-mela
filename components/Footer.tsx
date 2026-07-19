@@ -1,4 +1,5 @@
 import Image from "next/image";
+import ContactButton from "./ContactButton";
 
 export default function Footer() {
   return (
@@ -27,7 +28,8 @@ export default function Footer() {
             <a href="#about" className="hover:text-gold">About</a>
             <a href="#timeline" className="hover:text-gold">Schedule</a>
             <a href="#resources" className="hover:text-gold">Resources</a>
-            <a href="mailto:maxi@xlri.ac.in" className="hover:text-gold">Contact</a>
+            <ContactButton />
+
           </div>
         </div>
 
