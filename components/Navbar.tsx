@@ -22,9 +22,16 @@ export default function Navbar() {
               priority
             />
           </span>
-          <span className="ml-2.5 font-mono text-[11px] uppercase tracking-[0.25em] text-cream/80">
-            MAXI &middot; XLRI Delhi-NCR
-          </span>
+          <span className="relative h-10 w-24 sm:h-11 sm:w-28">
+  <Image
+    src="/XLRI_no_background.png"
+    alt="XLRI Delhi-NCR"
+    fill
+    sizes="(max-width: 640px) 96px, 112px"
+    className="object-contain"
+    priority
+  />
+</span>
         </a>
 
         <nav className="ml-auto hidden items-center gap-8 sm:flex">
