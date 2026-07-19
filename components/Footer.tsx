@@ -6,7 +6,7 @@ export default function Footer() {
       <div className="mx-auto max-w-6xl px-5 py-14 sm:px-8">
         <div className="flex flex-col gap-10 sm:flex-row sm:items-start sm:justify-between">
           <div className="flex items-center gap-3">
-            <span className="relative h-12 w-12 overflow-hidden rounded-full ring-1 ring-gold/60">
+            <span className="relative h-12 w-12 overflow-hidden rounded-lg ring-1 ring-gold/60">
               <Image
                 src="/maxi-mela-logo.jpg"
                 alt="MAXI Mela emblem"
