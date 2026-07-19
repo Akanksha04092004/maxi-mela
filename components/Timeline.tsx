@@ -30,7 +30,13 @@ export default function Timeline() {
         <p className="mt-4 max-w-xl text-ink/70">
           Threaded like a garland &mdash; one line, six moments. Simultaneous
           sessions share a single knot.
+        </p><p className="mt-4 max-w-xl text-ink/70">
+          Save the date: 8th Feb, 2027
         </p>
+        <a href="https://maps.app.goo.gl/dCnTJar7LBqY7WUc7"><p className="mt-4 max-w-xl text-ink/70">
+          Venue: DLF Cyberhub
+        </p>
+        </a>
 
         {/* Rail */}
         <div className="rail-scroll mt-14 overflow-x-auto pb-6">
